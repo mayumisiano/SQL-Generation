@@ -1,3 +1,3 @@
-# sql-generation
+# SQL-generation
 
 ## Estudos de Bancos de Dados ao longo do Bootcamp Generation
