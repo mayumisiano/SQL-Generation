@@ -1,0 +1,27 @@
+CREATE DATABASE db_servico_rh;
+
+USE db_servico_rh; 
+
+CREATE TABLE tb_funcionarios(
+	ID BIGINT AUTO_INCREMENT,
+    NOME VARCHAR(1000),
+    IDADE INT,
+    FUNCAO CHAR(255),
+    SALARIO float8,
+    DEPARTAMENTO VARCHAR(1000),
+    PRIMARY KEY (ID)
+);
+
+INSERT INTO tb_funcionarios (NOME,IDADE,FUNCAO,SALARIO, DEPARTAMENTO)
+VALUES ("Isabella", 20,"Deva", 3500,"TI");
+INSERT INTO tb_funcionarios (NOME,IDADE,FUNCAO,SALARIO, DEPARTAMENTO)
+VALUES ("Nayara", 30,"Deva",2000, "TI");
+INSERT INTO tb_funcionarios (NOME,IDADE,FUNCAO,SALARIO, DEPARTAMENTO)
+VALUES ("Ricardo", 45,"Gestor",17000, "RH");
+INSERT INTO tb_funcionarios (NOME,IDADE,FUNCAO,SALARIO, DEPARTAMENTO)
+VALUES ("Juliana", 26,"Scrum master",55000, "TI");
+INSERT INTO tb_funcionarios (NOME,IDADE,FUNCAO,SALARIO, DEPARTAMENTO)
+VALUES ("Adriana", 41,"Diretora",2000, "RH");
+
+SELECT * FROM tb_funcionarios
+	WHERE SALARIO >= 2000;
